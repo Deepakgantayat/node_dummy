@@ -1,7 +1,7 @@
 import express, { json } from 'express'
 import cors from 'cors'
 import {connectDB} from './config/databases.js'
-// import router from './config/databases'
+import router from './config/routes.js'
 
 const app = express()
 const port = 3002
@@ -12,7 +12,7 @@ app.get('/', (req,res) => {
     res.send('Welcome to the page')
 })
 
-// app.use('/',router)
+app.use('/',router)
 
 connectDB().then(
     async () => {
