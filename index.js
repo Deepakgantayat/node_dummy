@@ -13,6 +13,9 @@ app.get('/', (req,res) => {
 })
 
 app.use('/',router)
+// app.get('/users/data', (req,res) => {
+//   res.send('Welcome to the page')
+// })
 
 connectDB().then(
     async () => {
