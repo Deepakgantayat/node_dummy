@@ -2,4 +2,10 @@
 node_modules/
 
 #local-cache
-/Tempnodejsnpm-cache
+Tempnodejsnpm-cache/
+Tempnodejsnpm-cache/_cacache/
+Tempnodejsnpm-cache/_locks/
+Tempnodejsnpm-cache/_logs/
+
+# local env files
+.env*.local
