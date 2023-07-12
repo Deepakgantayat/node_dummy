@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
     res.send('welcome to the app')
 })
 
-app.use('/',router)
+app.use(router)
 
 app.listen(port,()=>{
     console.log('listening on port ',port)
