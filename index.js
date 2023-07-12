@@ -5,8 +5,8 @@ import router from './config/routes.js'
 
 const app = express()
 const port = 3002
-app.use(json())
-app.use(cors())
+// app.use(json())
+// app.use(cors())
 
 app.get('/', (req,res) => {
     res.send('Welcome to the page')
@@ -27,5 +27,3 @@ app.get('/', (req,res) => {
   //     console.log('Cannot start app until database connection is initialized. This will become async later, but for the time, bad luck :(');
   //   }
   // );
-
-  export default app
