@@ -27,3 +27,5 @@ connectDB().then(
       console.log('Cannot start app until database connection is initialized. This will become async later, but for the time, bad luck :(');
     }
   );
+
+  export default app
