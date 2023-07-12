@@ -12,7 +12,7 @@ app.get('/', (req,res) => {
     res.send('Welcome to the page')
 })
 
-app.use('/',router)
+// app.use('/',router)
 // app.get('/users/data', (req,res) => {
 //   res.send('Welcome to the page')
 // })
