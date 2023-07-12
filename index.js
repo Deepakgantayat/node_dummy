@@ -17,15 +17,15 @@ app.get('/', (req,res) => {
 //   res.send('Welcome to the page')
 // })
 
-connectDB().then(
-    async () => {
+// connectDB().then(
+//     async () => {
       app.listen(port, () => {
         console.log('listening to the port,',port)
     })
-    },
-    () => {
-      console.log('Cannot start app until database connection is initialized. This will become async later, but for the time, bad luck :(');
-    }
-  );
+  //   },
+  //   () => {
+  //     console.log('Cannot start app until database connection is initialized. This will become async later, but for the time, bad luck :(');
+  //   }
+  // );
 
   export default app
