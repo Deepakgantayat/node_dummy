@@ -1,7 +1,9 @@
-import express from 'express'
-import cors from 'cors'
+const express = require("express");
+const cors = require("cors");
 // import {connectDB} from './config/databases.js'
-import router from './config/routes.js'
+// import router from './config/routes.js'
+const router = require("./config/routes");
+
 
 const app = express()
 const port = 3002
